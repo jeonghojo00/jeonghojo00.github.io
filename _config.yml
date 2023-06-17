@@ -18,9 +18,9 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Data Science Portfolio # the main title
+title: Jeongho Jo # the main title
 
-tagline: Portfolio site for Data Science projects # it will display as the sub-title
+tagline: "Unleashing the Power of Data: A Journey through Data Science and Analytics" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Portfolio site for Data Science projects
