@@ -50,31 +50,31 @@ Department|The employee's department
 salary|The employee's salary (U.S. dollars)
 
 ### 2. Distribution of Target values (Left or Stayed)
-![Employee Attrition](/assets/images/eda_2_distribution_left.jpg)
+![Employee Attrition](/assets/images/salimotors/salimotors_eda_2_distribution_left.jpg)
 Out of all the employees in the dataset, approximately 16.6% have left the company, while the remaining 83.4% have stayed. Considering the imbalanced distribution of the target values, it becomes essential to evaluate our models using appropriate metrics that are robust to class imbalance, such as precision, recall, F1-score, and AUC-ROC. These metrics will provide a comprehensive evaluation of our model's performance in correctly predicting both employees who are likely to leave (true positives) and those who are likely to stay (true negatives).
 
 ### 3. Distribution of Numeric Features
-![Dist. Numeric Features](/assets/images/eda_3_distribution_numeric.jpg)
+![Dist. Numeric Features](/assets/images/salimotors/salimotors_eda_3_distribution_numeric.jpg)
 
 ### 4. Distribution of Categorical Features
-![Dists. Categorical Features](/assets/images/eda_4_distribution_categorical.jpg)
+![Dists. Categorical Features](/assets/images/salimotors/salimotors_eda_4_distribution_categorical.jpg)
 
 ### 5. Correlation Analysis
-![Correlation](/assets/images/eda_5_correlation.jpg)
+![Correlation](/assets/images/salimotors/salimotors_eda_5_correlation.jpg)
 Multicollinearity occurs when two or more variables are highly correlated with each other, which can lead to issues in the interpretation of regression models.
 
 The absence of high multicollinearity is an encouraging finding, as it suggests that the variables in our dataset are relatively independent of each other.
 
 ### 6. Feature Interactions
-![Feature Interactions 1](/assets/images/eda_6_features_1.jpg)
+![Feature Interactions 1](/assets/images/salimotors/salimotors_eda_6_features_1.jpg)
 1. (Left) 'Last Evaluation' vs. 'Satisfaction Level'
     - It shows that employess who are 'Highly Evaluated' and have 'Low Satisfaction Level' tended to leave.
 2. (Right)'Average Monthly Hours' vs. 'Satisfaction Level'
     - It shows that employee who worked 'More' in average and have 'Low Satisfaction Level' tended to leave.
-![Feature Interactions 2](/assets/images/eda_6_features_2.jpg)
+![Feature Interactions 2](/assets/images/salimotors/salimotors_eda_6_features_2.jpg)
 3. Employees in HR team left the company the most by ratio and employees in R&D and managment stayed the most by ratio. However, it seems like there were no significant factors that affect whether employees leave the coompany or not.
 
-![Feature Interactions 3](/assets/images/eda_6_features_3.jpg)
+![Feature Interactions 3](/assets/images/salimotors/salimotors_eda_6_features_3.jpg)
 4. It significantly showed that employees with low salary likely to leave the company.
 
 
@@ -87,8 +87,8 @@ XGBoost |0.985324 |0.973451 |0.932203 |0.952381 |0.963726|
 
 Overall, based on the given results, both Random Forest and XGBoost models demonstrate strong predictive capabilities for identifying employees likely to leave the company. Their high accuracy and balanced precision-recall trade-off make them suitable choices for this particular prediction task.
 
-![Feature Importance RF](/assets/images/feature_importance_rf.jpg)
-![Feature Importance XGBoost](/assets/images/feature_importance_xgb.jpg)
+![Feature Importance RF](/assets/images/salimotors/salimotors_feature_importance_rf.jpg)
+![Feature Importance XGBoost](/assets/images/salimotors/salimotors_feature_importance_xgb.jpg)
 
 Interestingly both models showed that the top 5 most importance features were 'satisfaction_level', number_project', 'average_monthly_hours', 'time_spend_company', and 'last evaluation'. 
 
